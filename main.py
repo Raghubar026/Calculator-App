@@ -3,9 +3,9 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
-class MainApp(App):
-   def build(self):
+
 class Calculator(App):
+    def build(self):
         self.icon = "Calculator.png"
         self.operators = {"/" : "\u00F7", "*" : "\u00D7", "+" : "+", "-" : "-", "+/-" : "+/-", "%" : "%", "mc" : "mc", "m+" : "m+", "m-" : "m-", "mr" : "mr", "^" : "^", "(" : "(", ")" : ")", "π" : "π"}
         self.last_was_operator = None
